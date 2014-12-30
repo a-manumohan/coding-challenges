@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		326BC0B31A533F8E004FB8D7 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BC0B21A533F8E004FB8D7 /* NetworkManager.m */; };
+		326BC0B61A534125004FB8D7 /* NetworkConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 326BC0B51A534125004FB8D7 /* NetworkConstants.m */; };
 		328FF1E91A529FC0003A93D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328FF1E81A529FC0003A93D3 /* main.m */; };
 		328FF1EC1A529FC0003A93D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328FF1EB1A529FC0003A93D3 /* AppDelegate.m */; };
 		328FF1EF1A529FC0003A93D3 /* namshi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 328FF1ED1A529FC0003A93D3 /* namshi.xcdatamodeld */; };
@@ -15,6 +17,7 @@
 		328FF1F71A529FC0003A93D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328FF1F61A529FC0003A93D3 /* Images.xcassets */; };
 		328FF1FA1A529FC0003A93D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 328FF1F81A529FC0003A93D3 /* LaunchScreen.xib */; };
 		328FF2061A529FC0003A93D3 /* namshiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 328FF2051A529FC0003A93D3 /* namshiTests.m */; };
+		47A60D0D1B8A3EC94D5F041F /* libPods-namshi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C55C02EFF2C89A1492944B35 /* libPods-namshi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		326BC0B11A533F8E004FB8D7 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = network/NetworkManager.h; sourceTree = "<group>"; };
+		326BC0B21A533F8E004FB8D7 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = network/NetworkManager.m; sourceTree = "<group>"; };
+		326BC0B41A534125004FB8D7 /* NetworkConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkConstants.h; path = network/NetworkConstants.h; sourceTree = "<group>"; };
+		326BC0B51A534125004FB8D7 /* NetworkConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkConstants.m; path = network/NetworkConstants.m; sourceTree = "<group>"; };
 		328FF1E31A529FC0003A93D3 /* namshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = namshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328FF1E71A529FC0003A93D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		328FF1E81A529FC0003A93D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +49,9 @@
 		328FF1FF1A529FC0003A93D3 /* namshiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = namshiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		328FF2041A529FC0003A93D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		328FF2051A529FC0003A93D3 /* namshiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = namshiTests.m; sourceTree = "<group>"; };
+		AC55B1FE525609685EB76FA7 /* Pods-namshi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namshi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-namshi/Pods-namshi.debug.xcconfig"; sourceTree = "<group>"; };
+		C55C02EFF2C89A1492944B35 /* libPods-namshi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-namshi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECA859EBC65D4A8429345D25 /* Pods-namshi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-namshi.release.xcconfig"; path = "Pods/Target Support Files/Pods-namshi/Pods-namshi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A60D0D1B8A3EC94D5F041F /* libPods-namshi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +73,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		326BC0B01A533F50004FB8D7 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				326BC0B11A533F8E004FB8D7 /* NetworkManager.h */,
+				326BC0B21A533F8E004FB8D7 /* NetworkManager.m */,
+				326BC0B41A534125004FB8D7 /* NetworkConstants.h */,
+				326BC0B51A534125004FB8D7 /* NetworkConstants.m */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
 		328FF1DA1A529FC0003A93D3 = {
 			isa = PBXGroup;
 			children = (
 				328FF1E51A529FC0003A93D3 /* namshi */,
 				328FF2021A529FC0003A93D3 /* namshiTests */,
 				328FF1E41A529FC0003A93D3 /* Products */,
+				9DBB512FDE42CDD167F32906 /* Pods */,
+				8D42CA41EE10DD3B9E4CBFA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +107,7 @@
 		328FF1E51A529FC0003A93D3 /* namshi */ = {
 			isa = PBXGroup;
 			children = (
+				326BC0B01A533F50004FB8D7 /* network */,
 				328FF1EA1A529FC0003A93D3 /* AppDelegate.h */,
 				328FF1EB1A529FC0003A93D3 /* AppDelegate.m */,
 				328FF1F01A529FC0003A93D3 /* ViewController.h */,
@@ -122,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8D42CA41EE10DD3B9E4CBFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C55C02EFF2C89A1492944B35 /* libPods-namshi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DBB512FDE42CDD167F32906 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC55B1FE525609685EB76FA7 /* Pods-namshi.debug.xcconfig */,
+				ECA859EBC65D4A8429345D25 /* Pods-namshi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 328FF2091A529FC0003A93D3 /* Build configuration list for PBXNativeTarget "namshi" */;
 			buildPhases = (
+				34CCD1BBB218652F42D9439B /* Check Pods Manifest.lock */,
 				328FF1DF1A529FC0003A93D3 /* Sources */,
 				328FF1E01A529FC0003A93D3 /* Frameworks */,
 				328FF1E11A529FC0003A93D3 /* Resources */,
+				A302F61D8D906047733B64A7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,14 +261,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34CCD1BBB218652F42D9439B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A302F61D8D906047733B64A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-namshi/Pods-namshi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		328FF1DF1A529FC0003A93D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326BC0B61A534125004FB8D7 /* NetworkConstants.m in Sources */,
 				328FF1EF1A529FC0003A93D3 /* namshi.xcdatamodeld in Sources */,
 				328FF1EC1A529FC0003A93D3 /* AppDelegate.m in Sources */,
 				328FF1F21A529FC0003A93D3 /* ViewController.m in Sources */,
+				326BC0B31A533F8E004FB8D7 /* NetworkManager.m in Sources */,
 				328FF1E91A529FC0003A93D3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +426,7 @@
 		};
 		328FF20A1A529FC0003A93D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC55B1FE525609685EB76FA7 /* Pods-namshi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = namshi/Info.plist;
@@ -357,6 +437,7 @@
 		};
 		328FF20B1A529FC0003A93D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA859EBC65D4A8429345D25 /* Pods-namshi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = namshi/Info.plist;
@@ -418,6 +499,7 @@
 				328FF20B1A529FC0003A93D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		328FF20C1A529FC0003A93D3 /* Build configuration list for PBXNativeTarget "namshiTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +508,7 @@
 				328FF20E1A529FC0003A93D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
