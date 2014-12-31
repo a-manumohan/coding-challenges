@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "675D4C1592FEEB6D003F6B4E"
-               BuildableName = "libPods-namshi-AFNetworking.a"
-               BlueprintName = "Pods-namshi-AFNetworking"
+               BlueprintIdentifier = "C8C6F2A3DAC588EA6ABBD399"
+               BuildableName = "libPods-namshiTests.a"
+               BlueprintName = "Pods-namshiTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

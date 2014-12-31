@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NetworkManager : NSObject
 
 +(void)fetchProductsFrom:(NSInteger)from count:(NSInteger)count :(void (^) (NSArray *products))completionBlock failure:(void(^)(NSError *error))failureBlock;

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NetworkManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [NetworkManager fetchProductsFrom:0 count:10 :^(NSArray *products) {
+        NSLog(@"%@",products);
+    } failure:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

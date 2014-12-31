@@ -4,10 +4,12 @@
 target 'namshi' do
 
 	pod 'AFNetworking', '~> 2.0'
+    pod 'Reachability'
 
 end
 
 target 'namshiTests' do
-
+    pod 'AFNetworking', '~> 2.0'
+    pod 'Reachability'
 end
 
