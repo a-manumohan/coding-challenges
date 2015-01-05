@@ -10,6 +10,8 @@
 		3211EBE61A5A74B0002EA8B2 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3211EBE01A5A74B0002EA8B2 /* CoreDataManager.m */; };
 		3211EBE71A5A74B1002EA8B2 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 3211EBE21A5A74B0002EA8B2 /* Product.m */; };
 		3211EBE81A5A74B1002EA8B2 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3211EBE51A5A74B0002EA8B2 /* NetworkManager.m */; };
+		3281A8971A5B118300A0EDFF /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3281A8961A5B118300A0EDFF /* ProductTableViewCell.m */; };
+		32C309521A5B1B0F000BA139 /* ProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C309511A5B1B0F000BA139 /* ProductDetailsViewController.m */; };
 		32EBEAAA1A5A734B002FE845 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EBEAA91A5A734B002FE845 /* main.m */; };
 		32EBEAAD1A5A734B002FE845 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32EBEAAC1A5A734B002FE845 /* AppDelegate.m */; };
 		32EBEAB01A5A734B002FE845 /* namshi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32EBEAAE1A5A734B002FE845 /* namshi.xcdatamodeld */; };
@@ -39,6 +41,11 @@
 		3211EBE21A5A74B0002EA8B2 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
 		3211EBE41A5A74B0002EA8B2 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
 		3211EBE51A5A74B0002EA8B2 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		3281A8951A5B118300A0EDFF /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductTableViewCell.h; path = views/ProductTableViewCell.h; sourceTree = "<group>"; };
+		3281A8961A5B118300A0EDFF /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductTableViewCell.m; path = views/ProductTableViewCell.m; sourceTree = "<group>"; };
+		32B835911A5B031F007676C7 /* namshi.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = namshi.pch; sourceTree = "<group>"; };
+		32C309501A5B1B0F000BA139 /* ProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailsViewController.h; path = viewcontrollers/ProductDetailsViewController.h; sourceTree = "<group>"; };
+		32C309511A5B1B0F000BA139 /* ProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailsViewController.m; path = viewcontrollers/ProductDetailsViewController.m; sourceTree = "<group>"; };
 		32EBEAA41A5A734B002FE845 /* namshi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = namshi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32EBEAA81A5A734B002FE845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32EBEAA91A5A734B002FE845 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,9 +103,30 @@
 			path = network;
 			sourceTree = "<group>";
 		};
+		3281A8941A5B114C00A0EDFF /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3281A8951A5B118300A0EDFF /* ProductTableViewCell.h */,
+				3281A8961A5B118300A0EDFF /* ProductTableViewCell.m */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		32C3094C1A5B1AB3000BA139 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				32C309501A5B1B0F000BA139 /* ProductDetailsViewController.h */,
+				32C309511A5B1B0F000BA139 /* ProductDetailsViewController.m */,
+				32EBEAB11A5A734B002FE845 /* ViewController.h */,
+				32EBEAB21A5A734B002FE845 /* ViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
 		32EBEA9B1A5A734B002FE845 = {
 			isa = PBXGroup;
 			children = (
+				32B835911A5B031F007676C7 /* namshi.pch */,
 				32EBEAA61A5A734B002FE845 /* namshi */,
 				32EBEAC31A5A734B002FE845 /* namshiTests */,
 				32EBEAA51A5A734B002FE845 /* Products */,
@@ -119,12 +147,12 @@
 		32EBEAA61A5A734B002FE845 /* namshi */ = {
 			isa = PBXGroup;
 			children = (
+				32C3094C1A5B1AB3000BA139 /* viewcontroller */,
+				3281A8941A5B114C00A0EDFF /* views */,
 				3211EBDE1A5A74B0002EA8B2 /* db */,
 				3211EBE31A5A74B0002EA8B2 /* network */,
 				32EBEAAB1A5A734B002FE845 /* AppDelegate.h */,
 				32EBEAAC1A5A734B002FE845 /* AppDelegate.m */,
-				32EBEAB11A5A734B002FE845 /* ViewController.h */,
-				32EBEAB21A5A734B002FE845 /* ViewController.m */,
 				32EBEAB41A5A734B002FE845 /* Main.storyboard */,
 				32EBEAB71A5A734B002FE845 /* Images.xcassets */,
 				32EBEAB91A5A734B002FE845 /* LaunchScreen.xib */,
@@ -312,11 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32C309521A5B1B0F000BA139 /* ProductDetailsViewController.m in Sources */,
 				32EBEAB01A5A734B002FE845 /* namshi.xcdatamodeld in Sources */,
 				3211EBE81A5A74B1002EA8B2 /* NetworkManager.m in Sources */,
 				32EBEAAD1A5A734B002FE845 /* AppDelegate.m in Sources */,
 				3211EBE61A5A74B0002EA8B2 /* CoreDataManager.m in Sources */,
 				3211EBE71A5A74B1002EA8B2 /* Product.m in Sources */,
+				3281A8971A5B118300A0EDFF /* ProductTableViewCell.m in Sources */,
 				32EBEAB31A5A734B002FE845 /* ViewController.m in Sources */,
 				32EBEAAA1A5A734B002FE845 /* main.m in Sources */,
 			);
@@ -443,6 +473,7 @@
 			baseConfigurationReference = A35F267F8D83B88026A868E5 /* Pods-namshi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = namshi.pch;
 				INFOPLIST_FILE = namshi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +485,7 @@
 			baseConfigurationReference = 273D8191D41BC84FF338A662 /* Pods-namshi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = namshi.pch;
 				INFOPLIST_FILE = namshi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

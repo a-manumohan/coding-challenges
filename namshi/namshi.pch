@@ -1,0 +1,18 @@
+//
+//  namshi.pch
+//  namshi
+//
+//  Created by Manu Mohan A on 2015/01/05.
+//  Copyright (c) 2015 namshi. All rights reserved.
+//
+
+#ifndef namshi_namshi_pch
+#define namshi_namshi_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#define MR_SHORTHAND
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+
+
+#endif

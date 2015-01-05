@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <MagicalRecord/CoreData+MagicalRecord.h>
 
 @interface AppDelegate ()
 
@@ -20,8 +19,7 @@
     // Override point for customization after application launch.
 //    [MagicalRecord set:@"namshi.sqlite"];
     [MagicalRecord setupCoreDataStackWithStoreNamed:@"namshi.sqlite"];
-    
-    
+   
     return YES;
 }
 
@@ -46,6 +44,7 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     // Saves changes in the application's managed object context before the application terminates.
+    [MagicalRecord cleanUp];
     [self saveContext];
 }
 
