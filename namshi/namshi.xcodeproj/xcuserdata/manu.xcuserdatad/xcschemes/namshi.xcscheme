@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "328FF1E21A529FC0003A93D3"
+               BlueprintIdentifier = "32EBEAA31A5A734B002FE845"
                BuildableName = "namshi.app"
                BlueprintName = "namshi"
                ReferencedContainer = "container:namshi.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "328FF1FE1A529FC0003A93D3"
+               BlueprintIdentifier = "32EBEABF1A5A734B002FE845"
                BuildableName = "namshiTests.xctest"
                BlueprintName = "namshiTests"
                ReferencedContainer = "container:namshi.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "328FF1FE1A529FC0003A93D3"
+               BlueprintIdentifier = "32EBEABF1A5A734B002FE845"
                BuildableName = "namshiTests.xctest"
                BlueprintName = "namshiTests"
                ReferencedContainer = "container:namshi.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "328FF1E21A529FC0003A93D3"
+            BlueprintIdentifier = "32EBEAA31A5A734B002FE845"
             BuildableName = "namshi.app"
             BlueprintName = "namshi"
             ReferencedContainer = "container:namshi.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "328FF1E21A529FC0003A93D3"
+            BlueprintIdentifier = "32EBEAA31A5A734B002FE845"
             BuildableName = "namshi.app"
             BlueprintName = "namshi"
             ReferencedContainer = "container:namshi.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "328FF1E21A529FC0003A93D3"
+            BlueprintIdentifier = "32EBEAA31A5A734B002FE845"
             BuildableName = "namshi.app"
             BlueprintName = "namshi"
             ReferencedContainer = "container:namshi.xcodeproj">

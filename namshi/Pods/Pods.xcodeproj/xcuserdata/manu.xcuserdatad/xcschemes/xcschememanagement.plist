@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-namshi-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-namshi-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,23 +24,29 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-namshiTests-AFNetworking.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-namshiTests-Reachability.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-namshiTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>59D5E30043AA438F75611352</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64017EC42530AC1265C67C48</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73E8660513FF92A31A64C826</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B0F44D3E413CF5F9DE2DD13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4E9B234514D5B23786ED4F77"
+               BlueprintIdentifier = "9B0F44D3E413CF5F9DE2DD13"
                BuildableName = "libPods-namshi.a"
                BlueprintName = "Pods-namshi"
                ReferencedContainer = "container:Pods.xcodeproj">

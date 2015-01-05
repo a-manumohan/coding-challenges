@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EDD7D9A50F7FF3A2ACB823B9"
+               BlueprintIdentifier = "59D5E30043AA438F75611352"
                BuildableName = "libPods-namshi-Reachability.a"
                BlueprintName = "Pods-namshi-Reachability"
                ReferencedContainer = "container:Pods.xcodeproj">

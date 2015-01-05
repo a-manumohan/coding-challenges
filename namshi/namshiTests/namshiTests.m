@@ -2,8 +2,8 @@
 //  namshiTests.m
 //  namshiTests
 //
-//  Created by Manu Mohan A on 2014/12/30.
-//  Copyright (c) 2014 namshi. All rights reserved.
+//  Created by Manu Mohan A on 2015/01/05.
+//  Copyright (c) 2015 namshi. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
