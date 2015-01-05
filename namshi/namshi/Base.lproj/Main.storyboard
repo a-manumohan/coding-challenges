@@ -90,9 +90,24 @@
                     <view key="view" contentMode="scaleToFill" id="rc9-6l-H7v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBB-Oi-4Bv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eBB-Oi-4Bv" firstAttribute="top" secondItem="rc9-6l-H7v" secondAttribute="topMargin" id="65M-z1-k1Q"/>
+                            <constraint firstItem="QkG-CU-sdb" firstAttribute="top" secondItem="eBB-Oi-4Bv" secondAttribute="bottom" id="h61-03-eFD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eBB-Oi-4Bv" secondAttribute="trailing" constant="-16" id="pWS-Sy-Wql"/>
+                            <constraint firstItem="eBB-Oi-4Bv" firstAttribute="leading" secondItem="rc9-6l-H7v" secondAttribute="leadingMargin" constant="-16" id="sbe-3X-pnM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kDZ-0P-Y0c"/>
+                    <connections>
+                        <outlet property="productWebView" destination="eBB-Oi-4Bv" id="nja-Ui-ype"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxc-Bg-nmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

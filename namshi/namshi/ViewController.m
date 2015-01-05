@@ -43,7 +43,7 @@
             product.sku = [prod valueForKey:@"sku"];
             product.productName = [prod valueForKey:@"brandName"];
             product.price = [prod valueForKey:@"price"];
-            product.productPage = [prod valueForKey:@"prodPage"];
+            product.productPage = [prod valueForKey:@"productPage"];
             
         }
         _products = [Product MR_findAll];
@@ -75,7 +75,10 @@
     if ([[segue identifier] isEqualToString:@"ShowProductDetails"]){
         ProductDetailsViewController *productDetailsViewController = (ProductDetailsViewController *)segue.destinationViewController
         ;
-        
+        NSIndexPath *indexPath = [productsTableView
+                                    indexPathForSelectedRow];
+        productDetailsViewController.product = [_products objectAtIndex:indexPath.row];
+        NSLog(@"%@",productDetailsViewController.product.productPage);
     }
 }
 
